@@ -3,10 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>HomePage</title>
 
 	<!-- STYLES -->
+	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 	<!-- FONTS -->
 
@@ -16,51 +18,129 @@
 <body>
 
 	<!-- HEADER -->
-	<header  style="background-color: green; height: 100px;">
-		<div class="grid-container">
-
+	<header class="header" style="background-color: black;">
 			
-			<div style="height: 100px; background-color: darkred;">a</div>
-			<div style="height: 100px; background-color: black;">a</div>
-			<div style="height: 100px; background-color: green;">a</div>
-			<div style="height: 100px; background-color: yellow;">a</div>
-			<div style="height: 100px; background-color: orange;">a</div>
+			<div class="logo" style=" background-color: ;">
+				<img src="images/logo.png" alt="Edmonton Streetcars Logo">
+			</div>
 
+			<a href="index.html" class="nav-left" style=" background-color: ">Home</a>
 
-		</div>
+			<a href="fleet.html" class="nav-left" style=" background-color: ">Fleet</a>
+
+			<a href="blog.html" class="nav-left" style=" background-color: ">Blog</a>
+			
+			<div class="brand" style=" background-color: ">
+				<div class="brand-txt1">
+					<h2>EDMONTON STREETCARS</h2>
+				</div>
+				<div class="brand-txt2">
+					<p>Operated by the Edmonton Railway Society</p>
+				</div>
+			</div>
+			<a href="history.html" class="nav-right" style=" background-color:">History</a>
+			<a href="#get-involved" class="nav-right" style=" background-color: ">Get Involved</a>
+			<a href="#members" class="nav-right" style=" background-color:">Member's Area</a>
+			<button class="button"> Donate</button>
+
 		
 	</header>
 
 	<!-- Video section -->
-	<section style="background-color: greenyellow; height: 200px;">
+	<section class="video-section">
 		<div>
-			<video autoplay muted loop width="10%" style="pointer-events: none;">
+			<video autoplay muted loop>
 				<source src="video/edmontonstreetcars.mp4" type="video/mp4">
 			</video>
 		</div>
 	</section>
 
 	<!-- We are edmonton dection -->
-	<div style="height: 100px; background-color: darkblue;">
-		
-	</div>
+	<section class="home-section">
+    <div class="home-box box-left">
+        <h1>WE ARE THE<br>EDMONTON<br>RADIAL RAILWAY<br>SOCIETY</h1>
+    </div>
+    <div class="home-box box-middle">
+        <p>The Edmonton Radial Railway Society is a 100% volunteer-run organization. We take immense pride in operating the historic streetcars that transport visitors at Fort Edmonton Park and across the High Level Bridge located in Edmonton, Alberta, Canada.</p>
+        <br>
+        <p>In total, we have over twenty-five streetcars, with eight in seasonal service, two undergoing restoration and fifteen others in storage or awaiting restoration.</p>
+    </div>
+    <div class="home-box box-right">
+        <div class="fact-box">
+            <p><strong style="color: white;">Fun Fact - The Edmonton Radial Railway Society has the largest fleet of heritage streetcars in Western Canada!</strong></p>
+        </div>
+        <button class="button">LEARN MORE</button>
+    </div>
+</section>
+
 
 	<!-- Ride The Streetcars -->
-	<div style="height: 100px; background-color: darkgreen;">
-		
-	</div>
+	<section class="ride">
+    <div class="ride-header">
+        <h1>RIDE THE STREETCARS</h1>
+    </div>
+    <div class="card-container">
+        <div class="home-card fleet-card">
+            <img src="images/fort-edmonton-park.png" alt="Fort Edmonton Park">
+            <div class="fleet-overlay">
+                <h3>FORT EDMONTON<br>PARK</h3>
+            </div>
+        </div>
+        <div class="home-card fleet-card">
+            <img src="images/high-level-bridge.png" alt="High Level Bridge">
+            <div class="fleet-overlay">
+                <h3>HIGH LEVEL BRIDGE</h3>
+            </div>
+        </div>
+    </div>
+</section>
 
 	<!-- Unique way to celbrate -->
-	<div style="height: 100px; background-color: darkcyan;">
-		
-	</div>
+	<section class="celebrate-section">
+  <div class="celebrate-overlay">
+    <div class="celebrate-left">
+      <h1>
+        A UNIQUE WAY TO<br>
+        CELEBRATE<br>
+        CORPORATE EVENTS,<br>
+        ANNIVERSARIES<br>
+        AND MORE
+      </h1>
+    </div>
+
+    <div class="celebrate-right">
+      <p>
+        Our streetcars are available for private charter, providing a unique
+        venue for your personal or corporate event
+      </p>
+      <button class="button" style="margin-top: 120px; margin-left: 760px;">BOOK A CHARTER</button>
+    </div>
+  </div>
+</section>
 
 	<!-- Footer -->
-	<footer style ="background-color: black; height: 200px">
-		<div>
-			
-		</div>
-	</footer>
-
+	<footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo-section">
+                <img src="images/logo.png" alt="Edmonton Streetcars Logo" class="footer-logo">
+                <p class="footer-address">Edmonton Radial Railway Society</p>
+                <p class="footer-address">P.O. Box 76057 Southgate P.O.</p>
+                <p class="footer-address">Edmonton, Alberta T6H 5Y7</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p><strong>Already a Member?</strong></p>
+                <button class="button login-button">LOGIN</button>
+                <p class="small-text">Learn more about becoming a member here</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>The Edmonton Radial Railway Society operates on Treaty 6 territory, a  traditional meeting grounds, gathering place, and travelling route to  the Cree, Saulteaux, Blackfoot, Métis, Dene and Nakota Sioux. We  acknowledge all the many First Nations, Métis, and Inuit whose footsteps have marked these lands for centuries. </p>
+        </div>
+    </footer>
 </body>
 </html>
